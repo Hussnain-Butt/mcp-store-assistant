@@ -1,0 +1,39 @@
+{
+  "name": "mcp-store-assistant",
+  "version": "1.0.0",
+  "description": "A secure MCP server that lets Claude answer questions about an online store's products, orders, sales and stock.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-store-assistant": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "seed": "tsx src/seed.ts",
+    "start": "node --disable-warning=ExperimentalWarning dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "tsx test/smoke.ts",
+    "test:writes": "tsx test/writes.ts && tsx src/seed.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai-agent",
+    "sqlite"
+  ],
+  "author": "Muhammad Hussain",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

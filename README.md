@@ -82,6 +82,10 @@ The tools live in `src/tools.ts`. To connect a real store, point the queries at 
 - `npm test` starts the server over stdio, calls every tool and checks that the write tool is hidden.
 - `npm run test:writes` enables writes, checks that a malicious SKU is rejected, updates one product, then reseeds the database.
 
+## Need a custom MCP server?
+
+I build secure MCP servers that connect Claude, Cursor and AI agents to your own database, API or internal tools. [Hire me on Fiverr](https://www.fiverr.com/hussnain_butt__).
+
 ## License
 
 MIT
